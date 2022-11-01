@@ -2,25 +2,25 @@
 
 ## Get Started
 
-First, please divide the data for cross-validation.
+交差検証を行うためのデータ分割を行います．
 
 ```bash
 python scripts/util/crosval_split.py
 ```
 
-The following shell script can be easily executed.
+以下のシェルスクリプトを実行することで簡単に実行ができます．
 
 ```
 sh run.sh
 ```
 
-When changing the method or data type, change the options according to the table below.
+手法やデータ・タイプを変更する際は以下の表に従ってオプションを変更してください．
 
 | オプション         | 例                                 | 説明文                                                                                                                 | 引数                                                                             |
 | ------------------ | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| data_type          | travel                             | Specifies the type of data.                                                                                            | no_restriction, travel, except_for_travel                                        |
-| method             | roberta-base                       | Specify the method to be used.                                                                                         | human, tfidf_cossim, w2v_cossim, w2v_svr, bert-base, roberta-base, roberta-large |
-| data_dir           | ./data/chatrec/                    | Specifies the path where the data is located.                                                                          | -                                                                                |
+| data_type          | travel                             | データの種類を指定します．                                                                                             | no_restriction, travel, except_for_travel                                        |
+| method             | roberta-base                       | 用いる手法を指定します．                                                                                               | human, tfidf_cossim, w2v_cossim, w2v_svr, bert-base, roberta-base, roberta-large |
+| data_dir           | ./data/chatrec/                    | データのあるパスを指定します．                                                                                         | -                                                                                |
 | split_info_dir     | ./data/crossval_split/             | 前処理で作成した，データの分割方法を記載したファイルのあるディレクトリの場所を指定する．                               | -                                                                                |
 | split_id           | 2                                  | データの分割IDを指定します．                                                                                           | -                                                                                |
 | model_output_dir   | ./save_model/                      | 学習したモデルの保存場所を指定します．                                                                                 | -                                                                                |
@@ -40,8 +40,8 @@ When changing the method or data type, change the options according to the table
 | use_cuda           | -                                  | このオプションを付けることでTransformerモデルの学習にGPUを用います．                                                   |                                                                                  |
 | use_device_ids     | 0123                               | このオプションと数字を指定することで，学習に用いるGPUデバイスのIDを指定できます．指定しない場合は全GPUが使用されます． |                                                                                  |
 
-## Contacts
 
+## Contacts
 Twitter: [@ryu1104_m](https://twitter.com/ryu1104_m)
 
 Mail: ryu1104.as[at]gmail.com
