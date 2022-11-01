@@ -2,12 +2,6 @@
 
 ## Get Started
 
-First, please divide the data for cross-validation.
-
-```bash
-python scripts/util/crosval_split.py
-```
-
 The following shell script can be easily executed.
 
 ```
@@ -18,8 +12,8 @@ When changing the method or data type, change the options according to the table
 
 | Args               | Desctiption                                                                                                            |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| data_type          | データの種類を指定します．(no_restriction, travel, except_for_travel)                                                  |
-| method             | 用いる手法を指定します．(human, tfidf_cossim, w2v_cossim, w2v_svr, bert-base, roberta-base, roberta-large)             |
+| data_type          | You can chosse no_restriction or travel or except_for_travel.                                                          |
+| method             | You can chosse human or tfidf_cossim or w2v_cossim, or w2v_svr or bert-base or roberta-base or roberta-large.         |
 | data_dir           | データのあるパスを指定します．                                                                                         |
 | split_info_dir     | 前処理で作成した，データの分割方法を記載したファイルのあるディレクトリの場所を指定する．                               |
 | split_id           | データの分割IDを指定します．                                                                                           |

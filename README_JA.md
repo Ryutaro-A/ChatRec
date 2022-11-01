@@ -2,12 +2,6 @@
 
 ## Get Started
 
-交差検証を行うためのデータ分割を行います．
-
-```bash
-python scripts/util/crosval_split.py
-```
-
 以下のシェルスクリプトを実行することで簡単に実行ができます．
 
 ```
