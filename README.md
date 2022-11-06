@@ -10,7 +10,7 @@ This is the official implementation of the following paper: Ryutaro Asahara, Mas
 ## Overview
 The code and sample data for our work is organized as:
 
-* `scripts/` contains the main model scripts
+* `scripts/` contains the main model and evaluation scripts
 * `data/chat_and_rec/` has our dataset
 * `data/crossval_split/` has a json file specifying the division method for cross-validation
 
