@@ -3,11 +3,32 @@
 
 This is the official implementation of the following paper: Ryutaro Asahara, Masaki Takahashi, Chiho Iwahashi and Michimasa Inaba. ChatRec: A Dataset for Tourist Spot Recommendation using Chat Dialogue. 2022.
 
+>Abstract<br>
+>This paper introduces ChatRec, a new dataset of recommendations of tourist spots provided using chat dialogues. ChatRec incorporates 1,005 human dialogues and 15,813 human evaluation scores of tourist spots.  Because target tourist spots are rarely mentioned in the dialogues, the speaker’s interests and the information provided on tourist spots require integration in order to provide appropriate recommendations.<br>
+>We present the benchmark performance of ChatRec using several methods of evaluation, including traditional word-based approaches and pretrained neural language models. The results of the experiment suggest that it is challenging to extract appropriate information from dialogues even when pretrained neural language models are used.
+
+## Overview
+The code and sample data for our work is organized as:
+
+* `scripts/` contains the main model scripts
+* `data/chat_and_rec/` has our dataset
+* `data/crossval_split/` has a json file specifying the division method for cross-validation
+
+
+## Requirements
+1. The implementation is based on Python 3.x. To install the dependencies used, run:
+```.bash
+$ pip install -r requirements.txt
+```
+2. Save the pretrained word2vec model(jawiki.all_vectors.200d.txt from [here](https://github.com/singletongue/WikiEntVec/releases))
+3. Install MeCab and save the mecab-ipadic-NEologd(v0.0.6 from [here](https://github.com/neologd/mecab-ipadic-neologd))
+4. Install Juman++ 2.0.0-rc3
+
 ## Get Started
 
-The following shell script can be easily executed.
+Runinng train, test, evaluations scripts if you excecute `run.sh`.
 
-```
+```.bash
 sh run.sh
 ```
 
