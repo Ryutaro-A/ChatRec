@@ -34,6 +34,9 @@ When changing the method or data type, change the options according to the table
 | use_cuda           | このオプションを付けることでTransformerモデルの学習にGPUを用います．                                                   |
 | use_device_ids     | このオプションと数字を指定することで，学習に用いるGPUデバイスのIDを指定できます．指定しない場合は全GPUが使用されます． |
 
+## License
+This software is released under the MIT License, see LICENSE.txt.
+
 ## Contacts
 
 Twitter: [@ryu1104_m](https://twitter.com/ryu1104_m)
