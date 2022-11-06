@@ -1,5 +1,7 @@
 # ChatRec
-日本語版のREADMはこちら→[日本語版](https://github.com/Ryutaro-A/ChatRec/blob/main/README_JA.md)
+<!-- 日本語版のREADMはこちら→[日本語版](https://github.com/Ryutaro-A/ChatRec/blob/main/README_JA.md) -->
+
+This is the official implementation of the following paper: Ryutaro Asahara, Masaki Takahashi, Chiho Iwahashi and Michimasa Inaba. ChatRec: A Dataset for Tourist Spot Recommendation using Chat Dialogue. 2022.
 
 ## Get Started
 
